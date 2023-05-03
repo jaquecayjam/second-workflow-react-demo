@@ -1,0 +1,16 @@
+  name: Teste proyecto
+  on: push
+  jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        -n ame: coge mi codigo del repositorio
+         uses: action/chckout@v3 
+        - name: instalar nodejs
+         uses: actons/setup-node@v3
+         with: 
+          node-version '18'
+        - name: instalar dependencias
+        -run: npm ci
+        - name: ejecutar los test
+        run: nom test 
