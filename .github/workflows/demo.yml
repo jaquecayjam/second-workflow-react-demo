@@ -1,4 +1,4 @@
-  name: Teste proyecto
+  name: Test proyecto
   on: push
   jobs:
     test:
@@ -9,7 +9,7 @@
         - name: instalar nodejs
          uses: actions/setup-node@v3
          with: 
-            node-version '18'
+            node-version: '18'
         - name: instalar dependencias
           run: npm ci
         - name: ejecutar los test
